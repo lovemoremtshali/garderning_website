@@ -1,0 +1,103 @@
+:root {
+    --bilbao: #15771b;
+    --frost: #f0fae9;
+    --norway: #95c594;
+    --pastel-green: #84d561;
+    --bay-leaf: #74ad7c;
+    --pixie-green: #c3dfc1;
+    --granny-smith-apple: #b8e7a5;
+    --amulet: #7ca47e;
+    --spring-rain: #b4ccb4;
+    --tea-green: #d4f3c4;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--frost);
+    color: var(--bilbao);
+}
+
+header {
+    background-color: var(--bilbao);
+    color: var(--frost);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    padding: 10px;
+    padding-top: 15px;
+    
+}
+
+.logo{
+    display: flex;
+}
+.logo img{
+    border-radius: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0;
+    border-width: 20px;
+}
+
+nav ul li:hover{
+    background-color: #b8e7a5;
+    
+}
+
+nav ul li a {
+    color: var(--frost);
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+section#home .hero {
+    background-color: var(--pastel-green);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+section#services ul {
+    list-style: none;
+    padding: 0;
+}
+
+section#services ul li {
+    margin: 1rem 0;
+}
+
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: var(--bilbao);
+    color: var(--frost);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
